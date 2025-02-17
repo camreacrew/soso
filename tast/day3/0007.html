@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display 속성</title>
+    <style>
+        /* 전체, 태그, 클래스, 아이디 */
+        div,
+        .block {
+            /* div요소와 .block을 선택 */
+        }
+
+        div.block {
+            /* block클래스를 가진 div */
+        }
+
+        .block div {
+            /* 하위 선택자 : div 내부에 있는 .block */
+            width: 200px;
+            border: 1px solid red;
+            background-color: yellow;
+        }
+
+        .inline span {
+            width: 200px;
+            border: 1px solid red;
+            background-color: yellow;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div clss="block">
+        <!-- block요소는 위에서 아래로 : 한줄에 하나씩 -->
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <div class="inline">
+        <!-- inline요소는 좌에서 우로 : 내용의 너비만큼 -->
+        <span>우리</span>
+        <span>나라</span>
+        <span>대한민국</span>
+</body>
+
+</html>

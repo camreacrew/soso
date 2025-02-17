@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ol ul의 padding을 0으로 */
+        ul,
+        ol {
+            padding: 0;
+            list-style: none;
+        }
+
+        ol li {
+            display: inline-block;
+            width: 100px;
+            height: 35px;
+            line-height: 35px;
+            background-color: lightgray;
+            margin: -2px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+        ol li:hover {
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        HTML5의 목표는 semantic markup
+        태그의 의미에 따라 정확하게 마크업
+      -->
+    <!-- 순서있는 리스트 : ordered list -->
+    <ol>
+        <li>짬뽕</li>
+        <li>짜장</li>
+        <li>볶음밥</li>
+    </ol>
+    <!-- 순서없는 리스트 -->
+    <ul>
+        <li>짬뽕</li>
+        <li>짜장</li>
+        <li>볶음밥</li>
+    </ul>
+</body>
+
+</html>

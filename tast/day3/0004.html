@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크 변경</title>
+    <style>
+        /* 
+        html요소의 배치 : 위에서 아래로(block), 좌에서 우로(inline)
+         */
+        /* div 요소들에 width는 100px */
+        /* 태그 선택자(1), 클래스 선택자(10), 아이디 선택자(100) 우선순위 */
+        div {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            margin: 10px;
+            /* 상하좌우 다 적용 */
+        }
+
+        .red {
+            border: 1px solid red;
+        }
+
+        .blue {
+            border: 1px solid blue;
+        }
+
+        .green {
+            border: 1px solid green;
+        }
+
+        div.box {
+            margin: 10px 0;
+            /* 상하 좌우 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box red">빨강</div>
+    <div class="box blue">파랑</div>
+    <div class="box green">초록</div>
+</body>
+
+</html>

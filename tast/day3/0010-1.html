@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #menu div {
+            display: inline-block;
+            height: 60px;
+            line-height: 60px;
+            width: 120px;
+            text-align: center;
+            margin-left: -6px;
+            transition: all 20ms;
+        }
+
+        #menu div:hover {
+            /*
+             colcor는 red, green, blue 빛의 삼원색
+             각각의 색은 0~255까지 
+            */
+            background-color: #059862;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div id="menu">
+            <div>Tutorials</div>
+            <div>Exercises</div>
+            <div>Certificates</div>
+            <div>Services</div>
+        </div>
+    </div>
+</body>
+
+</html>

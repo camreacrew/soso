@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html link</title>
+</head>
+
+<body>
+    <a href="http://www.naver.com">네이버로</a>
+    <!-- 링크할 url을 모를 때 "#"을 사용 -->
+    <a href="#">다음으로</a>
+    <!-- 
+    절대 주소와 상대 주소
+    - 절대 주소 : 파일의 고유한 irl(공식 주소)
+    - 상대 주소 : 현재 파일 기준의 주소. ex) 내 오른쪽 30cm
+        (현재 파일의 위치가 바뀌면 안됨)
+    -->
+
+    <!-- 0001.html에 절대, 상대로 링크 -->
+    <a href="http://192.168.0.188:5500/day3/0001.html">절대주소</a>
+    <a href="0001.html">상대주소</a>
+    <a href="/day3/0001.html">서버 주소를 생략한 절대주소 단축</a>
+    <!-- /로 시작하면 절대주소 -->
+    <hr>
+    <!-- day2의 0009.html을 절대와 상대로 링크하시오 -->
+    <a href="/day2/0009.html">절대</a>
+    <a href="../day2/0009.html">상대</a>
+</body>
+
+</html>
