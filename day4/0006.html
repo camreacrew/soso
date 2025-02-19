@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+         특정 속성을 가진 요소를 선택하는 속성 선택자
+         */
+        /* type 속성을 가진 요소 */
+        input[type] {
+            border: none;
+        }
+
+        /* type 속성의 값이 text인 요소 */
+        input[type='text'] {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="username" id="username" placeholder="아이디..." maxlength="8">
+        <input type="password" name="password" id="password" placeholder="비밀번호..." maxlength="8">
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
