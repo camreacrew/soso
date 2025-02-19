@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    table {
+      width: 800px;
+      height: 600px;
+    }
+    caption {
+      font-size: 2em;
+      letter-spacing: 1em;
+      font-weight: bold;
+    }
+    table, th, td {
+      border:1px solid darkgray;
+      border-collapse: collapse;
+    }
+    .hour {
+      text-align: center;
+      font-style: italic;
+      font-weight: bold;
+    }
+    .kor, .eng, .math, .ath, .history {
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    .kor {
+      background-color: darkgreen;
+    }
+    .math {
+      background-color: deeppink;
+    }
+    .eng {
+      background-color: blueviolet ;
+    }
+    .ath {
+      background-color: brown;
+    }
+    .history {
+      background-color: skyblue;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>시간표</caption>
+    <tr>
+      <th></th>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WEN</th>
+      <th>THU</th>
+      <th>FRI</th>
+    </tr>
+    <tr>
+      <td class="hour">1</td>
+      <td class="kor" rowspan="2">국 어</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour">2</td>
+      <td class="math" rowspan="2">수 학</td>
+      <td class="eng" rowspan="2">영 어</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour">3</td>
+      <td></td>
+      <td class="math" rowspan="3">수 학</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour">4</td>
+      <td></td>
+      <td></td>
+      <td class="ath" rowspan="3">체 육</td>
+      <td class="eng" rowspan="2">영 어</td>
+    </tr>
+    <tr>
+      <td class="hour">5</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td class="hour">6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td class="history">국 사</td>
+    </tr>
+  </table>
+</body>
+</html>

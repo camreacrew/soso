@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #login{
+      width:304px;
+      height:390px;
+      padding:28px 38px;
+      border:1px solid #000;
+      margin:100px auto;
+    }
+
+    #login .container {
+      width: 300px;
+    }
+
+    #or {
+      margin:24px 0;
+      font-size:16px;
+      font-weight:bold;
+      text-align:center;
+    }
+      
+    #login button {
+      display: block;
+      width:300px;
+      height:44px;
+      border:1px solid #000;
+      background-color:white;
+      font-weight:bold;
+    }
+    
+    #login input{
+      display: block;
+      width: 280px;
+      height:44px;
+      border:1px solid #000;
+      padding:0 10px;
+      margin-bottom:21px;
+      background-color:#eaeaea;
+    }
+    
+    #login button[type="submit"]{
+      background-color:#373f3c ;
+      color:white;
+      margin-bottom:27px;
+      font-weight:normal;
+    }
+    
+    #login a {
+      text-decoration:none;
+      color:#2c3432;
+      font-size:14px;
+      text-align:center;
+      display:block;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" id="login">
+    <div class="container">
+      <button type="button">
+        Log in with Google
+      </button>
+    </div>
+    <p id="or">or</p>
+    <div class="container">
+      <input type="text" id="username" name="username" placeholder="Username" >
+      <input type="password" id="password" name="password" placeholder="Password" >
+      <button type="submit">
+        LOGIN
+      </button>
+    </div>
+    <a href="#">Forgot your password?</p>
+  </form>
+</body>
+</html>
