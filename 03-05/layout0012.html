@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3단 레이아웃 + 메뉴영역</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #app {
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        ul {
+            list-style: none;
+            overflow: hidden;
+
+        }
+
+        ul li {
+            float: left;
+            width: 150px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+        }
+
+        ul li:hover {
+            background-color: red;
+            color: wheat;
+            cursor: pointer;
+        }
+
+        header,
+        nav,
+        footer {
+            height: 50px;
+            color: wheat;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        header {
+            background-color: rgb(60, 79, 85);
+        }
+
+        nav {
+            background-color: blueviolet;
+        }
+
+        footer {
+            background-color: deeppink;
+        }
+
+        aside {
+            width: 150px;
+            height: 300px;
+            background-color: lightgray;
+        }
+
+        main {
+            overflow: hidden;
+        }
+
+        aside:first-of-type {
+            float: left;
+        }
+
+        aside:last-of-type {
+            float: right;
+        }
+
+        section {
+            float: left;
+            width: 700px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <del id="'app">
+        <header>헤더 영역</header>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>소개</li>
+                <li>사업분야</li>
+            </ul>
+        </nav>
+        <main>
+            <aside>부가 정보</aside>
+            <section>본문</section>
+            <aside>부가 정보</aside>
+        </main>
+        <footer>푸터 영역</footer>
+    </del>
+</body>
+
+</html>
